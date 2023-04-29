@@ -130,6 +130,23 @@ public class Course {
 
     }
     
+    public void delete(int sid, int semester) {
+        String sql = "delete from course where student_id=? and semester=?";
+        try {
+            ps = con.prepareStatement(sql);
+            ps.setInt(1, sid);
+            ps.setInt(2, semester);
+            if (ps.executeUpdate() > 0) {
+                //JOptionPane.showMessageDialog(null, "Course added successfully");
+                ;
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(Course.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
+    
     public void getCourseValue(JTable table, String SearchValue) {
         String sql = "select * from course where concat(id,student_id,semester)like ? order by id desc";
         
