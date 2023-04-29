@@ -136,6 +136,7 @@ public class Home extends javax.swing.JFrame {
         jButton16 = new javax.swing.JButton();
         jButton17 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
         jPanel20 = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
         jTextField12 = new javax.swing.JTextField();
@@ -706,7 +707,6 @@ public class Home extends javax.swing.JFrame {
         jPanel13.setBackground(new java.awt.Color(153, 255, 204));
         jPanel13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 255, 204), 4, true));
 
-        jTextField9.setEditable(false);
         jTextField9.setBackground(new java.awt.Color(204, 204, 204));
         jTextField9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField9.addActionListener(new java.awt.event.ActionListener() {
@@ -790,7 +790,7 @@ public class Home extends javax.swing.JFrame {
         });
 
         jComboBox6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Programming", "C++ Programming", "Advanced Mathematics II", "Data Structures & Algorithms", "Python ", "Java", "Comprehensive Practice I", "Engineering Mathematics" }));
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "C Programming", "C++ Programming", "Data Structures & Algorithms", "Python ", "Java", "Engineering Mathematics" }));
         jComboBox6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox6ActionPerformed(evt);
@@ -798,13 +798,13 @@ public class Home extends javax.swing.JFrame {
         });
 
         jComboBox7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Principle of computer component", "Report writing", "Web Programming", "Java OOP", "Design User Interface", "JSP", "Software Testing and Inspection", "Mobile App Development" }));
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Web Programming", "Java OOP", "Design User Interface", "Software Testing and Inspection", "Mobile App Development" }));
 
         jComboBox8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Advanced Mathematics I", "Database", "Software Testing", "Linux", "Data Science", "Big Data I", "Big Data II", "Comprehensive Practice II" }));
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Database", "Software Testing", "Linux", "Data Science", "Big Data I" }));
 
         jComboBox9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Chinese Traditional Culture", "Computer Network", "Overview of China", "Principle of Operating Systems", "Computer Science", "Artificial Intelligence I", "HSK 3", "Digital Image Processing" }));
+        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Computer Network", "Principle of Operating Systems", "Computer Science", "Artificial Intelligence I", "Digital Image Processing" }));
 
         jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel17.setText("Semester");
@@ -825,7 +825,7 @@ public class Home extends javax.swing.JFrame {
         jLabel22.setText("Course 5");
 
         jComboBox10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cloud Computing", "Algorithms Analysis and Design", "Machine Learning", "Deep Learning", "HSK Test Tutoring", "IT Project Management", "Artificial Intelligence II", "Graduation Thesis", " " }));
+        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cloud Computing", "Algorithms Analysis and Design", "Machine Learning", "Deep Learning", "Artificial Intelligence II" }));
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
@@ -1039,6 +1039,15 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        jButton19.setBackground(new java.awt.Color(102, 255, 255));
+        jButton19.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jButton19.setText("Delete");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
         jPanel19Layout.setHorizontalGroup(
@@ -1046,13 +1055,15 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPanel19Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(27, 27, 27)
+                .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
                 .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(31, 31, 31)
                 .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(61, 61, 61))
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1062,7 +1073,8 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -1272,6 +1284,15 @@ public class Home extends javax.swing.JFrame {
         jTextScore2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextScore2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextScore2.setText("0.0");
+        jTextScore2.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+                jTextScore2AncestorRemoved(evt);
+            }
+        });
 
         jTextScore3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextScore3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -2386,7 +2407,7 @@ public class Home extends javax.swing.JFrame {
             JOptionPane.showMessageDialog (this ,"Student id or semester number is missing");
         }
         else{
-            int id=course.getMax();
+            int id=Integer.parseInt(jTextField9.getText());
             int sid = Integer.parseInt(jTextField11.getText());
             int semesterNo=Integer.parseInt(jComboBox5.getSelectedItem().toString());
             String course1=jComboBox6.getSelectedItem().toString();
@@ -2395,7 +2416,12 @@ public class Home extends javax.swing.JFrame {
             String course4=jComboBox9.getSelectedItem().toString();
             String course5=jComboBox10.getSelectedItem().toString();
             if(course.isSemesterExist(sid, semesterNo)){
-                JOptionPane.showMessageDialog(this,"This student has already taken a semester"+semesterNo);
+                //JOptionPane.showMessageDialog(this,"This student has already taken a semester"+semesterNo);
+                course.delete(sid,semesterNo);
+                course.insert(id,sid,semesterNo, course1,course2,course3,course4,course5);
+                jTable2.setModel(new DefaultTableModel(null, new Object[]{"ID","Student ID", "Semester", "Course1", "Course2", "Course3", "Course4", "Course5"}));                                    
+                course.getCourseValue(jTable2,"");
+                clearCourse();
             }
             else{
                 if(course.isCourseExist(id, "course1", course1)){
@@ -2609,15 +2635,39 @@ public class Home extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton34ActionPerformed
 
+    private void jTextScore2AncestorRemoved(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jTextScore2AncestorRemoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextScore2AncestorRemoved
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        if(jTextField11.getText().isEmpty()||jComboBox5.getItemCount()==0){
+            JOptionPane.showMessageDialog (this ,"Student id or semester number is missing");
+        }
+        else{
+            int sid = Integer.parseInt(jTextField11.getText());
+            int semesterNo=Integer.parseInt(jComboBox5.getSelectedItem().toString());
+            if(course.isSemesterExist(sid, semesterNo)){
+                //JOptionPane.showMessageDialog(this,"This student has already taken a semester"+semesterNo);
+                course.delete(sid,semesterNo);
+                jTable2.setModel(new DefaultTableModel(null, new Object[]{"ID","Student ID", "Semester", "Course1", "Course2", "Course3", "Course4", "Course5"}));                                    
+                course.getCourseValue(jTable2,"");
+                clearCourse();
+            }
+            else{
+                JOptionPane.showMessageDialog(this,"This "+semesterNo+" is not taken by the student "+sid);
+            }
+        }
+    }//GEN-LAST:event_jButton19ActionPerformed
+
     private boolean isNumeric(String s){
         
         try{
             double d=Double.parseDouble(s);
-            if(d>=0.0 && d<=4.0){
+            if(d>=0.0 && d<=10.0){
                 return true;
             }
             else{
-                 JOptionPane.showMessageDialog(this,"Please exter a valid value, it must be between 0.0 and 4.0");
+                 JOptionPane.showMessageDialog(this,"Please enter a valid value, it must be between 0.0 and 10.0");
                 return false;
             }
         }catch(NumberFormatException e){
@@ -2675,6 +2725,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
